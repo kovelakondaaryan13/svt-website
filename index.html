@@ -1196,8 +1196,9 @@
     }
 
     .footer-logo {
-      height: 36px;
-      width: auto;
+      height: auto;
+      max-width: 240px;
+      display: block;
       object-fit: contain;
       filter: brightness(0) invert(1);
       margin-bottom: 8px;
@@ -1540,7 +1541,7 @@
             <p class="product-desc">WhatsApp-native patient engagement OS for clinics. Automates follow-ups, reminders,
               and intake — no app download needed.</p>
             <div class="mini-widget">
-              <div class="mw-title">LYNDOC HEALTH</div>
+              <div class="mw-title">LYNCDOC HEALTH</div>
               <div class="mw-row"><span>Enquiries Today:</span><span class="mw-val" id="p-w1">14</span></div>
               <div class="mw-row"><span>Conversion Rate:</span><span class="mw-val">76%</span></div>
               <div class="mw-row"><span>Next Reminder:</span><span class="mw-val">11:30 AM</span></div>
@@ -1603,7 +1604,7 @@
           <div class="result-card">
             <canvas class="rc-wave" id="rw2"></canvas>
             <div class="rc-header">
-              <div class="rc-client">Lyndoc</div>
+              <div class="rc-client">Lyncdoc</div>
               <div class="rc-tag">Healthcare</div>
             </div>
             <div class="rc-number">30→76%</div>
@@ -2155,7 +2156,7 @@
         ctx.beginPath(); ctx.moveTo(0, c.height / 2);
         for (let x = 0; x < c.width; x += 2) {
           let y = c.height / 2;
-          if (i === 1) { // Lyndoc chaos to stable
+          if (i === 1) { // Lyncdoc chaos to stable
             if (x < c.width / 2) y += Math.sin(x * 0.1 + t * 3) * 15 + (Math.random() - 0.5) * 10;
             else y += Math.sin(x * 0.02 + t) * 3;
           } else if (i === 3) { // Gladful flat zero
